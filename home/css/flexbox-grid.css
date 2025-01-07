@@ -1,0 +1,69 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "left middle right"
+      "downleft downmiddle downright"
+      "footer footer footer";
+    gap: 10px;
+    background-color: #808F87; 
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: #E2EFDE; 
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    border-radius: 8px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  
+  .item1 {
+    grid-area: header;
+  }
+  
+  .item2 {
+    grid-area: left;
+  }
+  
+  .item3 {
+    grid-area: middle;
+  }
+  
+  .item4 {
+    grid-area: right;
+  }
+  
+  .item5 {
+    grid-area: downleft;
+  }
+  
+  .item6 {
+    grid-area: downmiddle;
+  }
+  
+  .item7 {
+    grid-area: downright;
+  }
+  
+  .item8 {
+    grid-area: footer;
+  }
+  
+  
+  .grid-container > div:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  }
+  
+  
+  img {
+    width: 100%;
+    max-width: 300px; 
+    display: block;
+    margin: 10px auto; 
+  }
